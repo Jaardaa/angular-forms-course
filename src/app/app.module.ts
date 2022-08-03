@@ -42,58 +42,58 @@ import {CreateCourseStep1Component} from './create-course/create-course-step-1/c
 import {FileUploadComponent} from './file-upload/file-upload.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {LoginReactiveComponent} from './login-reactive/login-reactive.component';
+import { PasswordStrengthDirective } from './directives/password-strength.directive';
+import { OnlyOneErrorPipe } from './pipes/only-one-error.pipe';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        HomeComponent,
-        AboutComponent,
-        CourseComponent,
-        CoursesCardListComponent,
-        CourseDialogComponent,
-        LoginComponent,
-        CreateCourseComponent,
-        CreateCourseStep1Component,
-        CreateCourseStep2Component,
-        CreateCourseStep3Component,
-        AddressFormComponent,
-        FileUploadComponent,
-        LoginReactiveComponent
-    ],
-    imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
-        HttpClientModule,
-        MatMenuModule,
-        MatButtonModule,
-        MatIconModule,
-        MatCardModule,
-        MatTabsModule,
-        MatSidenavModule,
-        MatListModule,
-        MatToolbarModule,
-        MatInputModule,
-        MatTableModule,
-        MatPaginatorModule,
-        MatSortModule,
-        MatProgressSpinnerModule,
-        MatDialogModule,
-        AppRoutingModule,
-        MatSelectModule,
-        MatDatepickerModule,
-        MatNativeDateModule,
-        MatRadioModule,
-        MatCheckboxModule,
-        MatStepperModule,
-        MatProgressBarModule,
-        FormsModule,
-        ReactiveFormsModule
-    ],
-    providers: [
-        CoursesService,
-        CourseResolver
-    ],
-    bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    CourseComponent,
+    CoursesCardListComponent,
+    CourseDialogComponent,
+    LoginComponent,
+    CreateCourseComponent,
+    CreateCourseStep1Component,
+    CreateCourseStep2Component,
+    CreateCourseStep3Component,
+    AddressFormComponent,
+    FileUploadComponent,
+    LoginReactiveComponent,
+    PasswordStrengthDirective,
+    OnlyOneErrorPipe
+  ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatIconModule,
+    MatCardModule,
+    MatTabsModule,
+    MatSidenavModule,
+    MatListModule,
+    MatToolbarModule,
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatProgressSpinnerModule,
+    MatDialogModule,
+    AppRoutingModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatRadioModule,
+    MatCheckboxModule,
+    MatStepperModule,
+    MatProgressBarModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
+  providers: [CoursesService, CourseResolver],
+  bootstrap: [AppComponent],
 })
-export class AppModule {
-}
+export class AppModule {}
